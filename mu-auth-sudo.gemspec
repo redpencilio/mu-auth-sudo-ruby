@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = "ruby gem that provides a wrapper for sparql client that overrules access rights of queries in mu.semte.ch through a mu-auth-sudo header."
   spec.description   = "ruby gem that provides a wrapper for sparql client that overrules access rights of queries in mu.semte.ch through a mu-auth-sudo header."
-  spec.homepage      = "https://github.com/lblod/mu-auth-sudo-ruby"
+  spec.homepage      = "https://github.com/redpencilio/mu-auth-sudo-ruby"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
