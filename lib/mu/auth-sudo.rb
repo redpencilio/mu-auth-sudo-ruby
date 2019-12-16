@@ -23,7 +23,7 @@ module Mu
     end
 
     def self.update(query)
-      sudo_query(query)
+      query(query)
     end
   end
 end
