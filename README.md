@@ -29,14 +29,14 @@ class yourClass
   include Mu::AuthSudo::Helpers
   
   def some_function
-    sudo_update(%(
+    update_sudo(%(
       INSERT DATA { 
         GRAPH <http://example.com/foo> { 
           <http://example.com/foo> a void:Dataset
         }
       }
     ))
-    sudo_query("ASK { ?s ?p ?o}")
+    query_sudo("ASK { ?s ?p ?o}")
   end
 end
 
