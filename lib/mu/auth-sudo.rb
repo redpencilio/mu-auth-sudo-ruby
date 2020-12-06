@@ -23,7 +23,8 @@ module Mu
     end
 
     def self.update(query)
-      query(query)
+      puts "Executing sudo update: #{query}"
+      sparql_client.update query
     end
   end
 end
