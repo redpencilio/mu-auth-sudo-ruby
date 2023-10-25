@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    mu-auth-sudo (0.2.0)
+    mu-auth-sudo (0.3.0)
       nokogiri (~> 1.5)
       sparql-client (~> 3.1)
 
@@ -11,11 +11,9 @@ GEM
     bcp47_spec (0.2.1)
     connection_pool (2.4.1)
     link_header (0.0.8)
-    mini_portile2 (2.8.5)
     net-http-persistent (4.0.2)
       connection_pool (~> 2.2)
-    nokogiri (1.15.4)
-      mini_portile2 (~> 2.8.2)
+    nokogiri (1.15.4-x86_64-linux)
       racc (~> 1.4)
     racc (1.7.1)
     rake (13.0.1)
