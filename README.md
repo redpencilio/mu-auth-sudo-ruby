@@ -46,6 +46,14 @@ Mu::AuthSudo.query(query)
 Mu::AuthSudo.update(query)
 ```
 
+## Logging
+
+The verbosity of logging can be configured through following environment variables:
+
+- `LOG_SPARQL_ALL`: Logging of all executed SPARQL queries, read as well as update (default `true`)
+- `LOG_SPARQL_QUERIES`: Logging of executed SPARQL read queries (default: `undefined`). Overrules `LOG_SPARQL_ALL`.
+- `LOG_SPARQL_UPDATES`: Logging of executed SPARQL update queries (default `undefined`). Overrules `LOG_SPARQL_ALL`.
+
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. You can also run `bin/console` for an interactive prompt that will allow you to experiment.

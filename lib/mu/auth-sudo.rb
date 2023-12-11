@@ -1,5 +1,9 @@
 require 'sparql/client'
 
+LOG_SPARQL_ALL = ENV.has_key?("LOG_SPARQL_ALL") ? ENV["LOG_SPARQL_ALL"].casecmp('true').zero? : true
+LOG_SPARQL_QUERIES = ENV.has_key?("LOG_SPARQL_QUERIES") ? ENV["LOG_SPARQL_QUERIES"].casecmp('true').zero? : LOG_SPARQL_ALL
+LOG_SPARQL_UPDATES = ENV.has_key?("LOG_SPARQL_UPDATES")? ENV["LOG_SPARQL_UPDATES"].casecmp('true').zero? : LOG_SPARQL_ALL
+
 module Mu
   module AuthSudo
     module Helpers
@@ -18,13 +22,18 @@ module Mu
     end
 
     def self.query(query)
-      puts "Executing sudo query: #{query}"
+      if LOG_SPARQL_QUERIES
+        puts "Executing sudo query: #{query}"
+      end
       sparql_client.query query
     end
 
     def self.update(query)
-      puts "Executing sudo update: #{query}"
+      if LOG_SPARQL_UPDATES
+        puts "Executing sudo update: #{query}"
+      end
       sparql_client.update query
     end
   end
 end
+
