@@ -13,9 +13,9 @@ GEM
     link_header (0.0.8)
     net-http-persistent (4.0.2)
       connection_pool (~> 2.2)
-    nokogiri (1.15.4-x86_64-linux)
+    nokogiri (1.16.2-x86_64-linux)
       racc (~> 1.4)
-    racc (1.7.1)
+    racc (1.7.3)
     rake (13.0.1)
     rdf (3.3.1)
       bcp47_spec (~> 0.2)
@@ -25,7 +25,7 @@ GEM
       rdf (~> 3.3)
 
 PLATFORMS
-  ruby
+  x86_64-linux
 
 DEPENDENCIES
   bundler (~> 2.1)
